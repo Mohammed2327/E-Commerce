@@ -1,0 +1,550 @@
+{
+  "products": {
+    "mobiles": [
+      {
+        "id": 1,
+        "title": "iPhone 14",
+        "price": 999.99,
+        "image": "./images/iphone.png"
+      },
+      {
+        "id": 2,
+        "title": "Samsung Galaxy S21",
+        "price": 799.99,
+        "image": "./images/iphone.png"
+      },
+      {
+        "id": 3,
+        "title": "Google Pixel 6",
+        "price": 599.99,
+        "image": "./images/iphone.png"
+      },
+      {
+        "id": 4,
+        "title": "OnePlus 9",
+        "price": 729.99,
+        "image": "./images/iphone.png"
+      },
+      {
+        "id": 5,
+        "title": "Xiaomi Mi 11",
+        "price": 749.99,
+        "image": "./images/iphone.png"
+      },
+      {
+        "id": 6,
+        "title": "Sony Xperia 5 II",
+        "price": 899.99,
+        "image": "./images/iphone.png"
+      },
+      {
+        "id": 7,
+        "title": "Nokia 8.3 5G",
+        "price": 699.99,
+        "image": "./images/iphone.png"
+      },
+      {
+        "id": 8,
+        "title": "Motorola Edge 20",
+        "price": 599.99,
+        "image": "./images/iphone.png"
+      },
+      {
+        "id": 9,
+        "title": "Huawei P40 Pro",
+        "price": 999.99,
+        "image": "./images/iphone.png"
+      },
+      {
+        "id": 10,
+        "title": "Oppo Find X3 Pro",
+        "price": 1149.99,
+        "image": "./images/iphone.png"
+      },
+      {
+        "id": 11,
+        "title": "Realme GT",
+        "price": 499.99,
+        "image": "./images/iphone.png"
+      },
+      {
+        "id": 12,
+        "title": "Vivo X60 Pro",
+        "price": 799.99,
+        "image": "./images/iphone.png"
+      },
+      {
+        "id": 13,
+        "title": "Asus ROG Phone 5",
+        "price": 999.99,
+        "image": "./images/iphone.png"
+      },
+      {
+        "id": 14,
+        "title": "LG Velvet",
+        "price": 599.99,
+        "image": "./images/iphone.png"
+      },
+      {
+        "id": 15,
+        "title": "ZTE Axon 20",
+        "price": 499.99,
+        "image": "./images/iphone.png"
+      },
+      {
+        "id": 16,
+        "title": "Google Pixel 5a",
+        "price": 449.99,
+        "image": "./images/iphone.png"
+      },
+      {
+        "id": 17,
+        "title": "Samsung Galaxy A52",
+        "price": 349.99,
+        "image": "./images/iphone.png"
+      },
+      {
+        "id": 18,
+        "title": "Xiaomi Redmi Note 10",
+        "price": 199.99,
+        "image": "./images/iphone.png"
+      },
+      {
+        "id": 19,
+        "title": "OnePlus Nord",
+        "price": 299.99,
+        "image": "./images/iphone.png"
+      },
+      {
+        "id": 20,
+        "title": "Nokia G20",
+        "price": 199.99,
+        "image": "./images/iphone.png"
+      },
+      {
+        "id": 21,
+        "title": "Motorola Moto G Power",
+        "price": 199.99,
+        "image": "./images/iphone.png"
+      },
+      {
+        "id": 22,
+        "title": "Huawei P30 Pro",
+        "price": 699.99,
+        "image": "./images/iphone.png"
+      },
+      {
+        "id": 23,
+        "title": "Oppo Reno Ace 2",
+        "price": 499.99,
+        "image": "./images/iphone.png"
+      },
+      {
+        "id": 24,
+        "title": "Realme 6",
+        "price": 299.99,
+        "image": "./images/iphone.png"
+      },
+      {
+        "id": 25,
+        "title": "Vivo Y20",
+        "price": 199.99,
+        "image": "./images/iphone.png"
+      },
+      {
+        "id": 26,
+        "title": "Asus Zenfone 7 Pro",
+        "price": 699.99,
+        "image": "./images/iphone.png"
+      },
+      {
+        "id": 27,
+        "title": "LG K52",
+        "price": 299.99,
+        "image": "./images/iphone.png"
+      },
+      {
+        "id": 28,
+        "title": "ZTE Blade A7 Prime",
+        "price": 199.99,
+        "image": "./images/iphone.png"
+      },
+      {
+        "id": 29,
+        "title": "Google Pixel 4a",
+        "price": 299.99,
+        "image": "./images/iphone.png"
+      },
+      {
+        "id": 30,
+        "title": "Samsung Galaxy M12",
+        "price": 199.99,
+        "image": "./images/iphone.png"
+      }
+    ],
+    "laptops": [
+      {
+        "id": 31,
+        "title": "Dell XPS 13",
+        "price": 999.99,
+        "image": "/images/laptop.jpg"
+      },
+      {
+        "id": 32,
+        "title": "Apple MacBook Air",
+        "price": 1099.99,
+        "image": "./images/laptop.jpg"
+      },
+      {
+        "id": 33,
+        "title": "HP Spectre x360",
+        "price": 1299.99,
+        "image": "./images/laptop.jpg"
+      },
+      {
+        "id": 34,
+        "title": "Lenovo ThinkPad X1 Carbon",
+        "price": 1399.99,
+        "image": "./images/laptop.jpg"
+      },
+      {
+        "id": 35,
+        "title": "Asus ZenBook 14",
+        "price": 899.99,
+        "image": "./images/laptop.jpg"
+      },
+      {
+        "id": 36,
+        "title": "Microsoft Surface Laptop 4",
+        "price": 1499.99,
+        "image": "./images/laptop.jpg"
+      },
+      {
+        "id": 37,
+        "title": "Acer Swift 3",
+        "price": 749.99,
+        "image": "./images/laptop.jpg"
+      },
+      {
+        "id": 38,
+        "title": "Razer Blade 15",
+        "price": 1999.99,
+        "image": "./images/laptop.jpg"
+      },
+      {
+        "id": 39,
+        "title": "HP Pavilion 15",
+        "price": 849.99,
+        "image": "./images/laptop.jpg"
+      },
+      {
+        "id": 40,
+        "title": "Dell Inspiron 15",
+        "price": 699.99,
+        "image": "./images/laptop.jpg"
+      },
+      {
+        "id": 41,
+        "title": "Samsung Galaxy Book Pro",
+        "price": 1199.99,
+        "image": "./images/laptop.jpg"
+      },
+      {
+        "id": 42,
+        "title": "LG Gram 17",
+        "price": 1699.99,
+        "image": "./images/laptop.jpg"
+      },
+      {
+        "id": 43,
+        "title": "Huawei MateBook X Pro",
+        "price": 1399.99,
+        "image": "./images/laptop.jpg"
+      },
+      {
+        "id": 44,
+        "title": "Microsoft Surface Book 3",
+        "price": 1999.99,
+        "image": "./images/laptop.jpg"
+      },
+      {
+        "id": 45,
+        "title": "Asus ROG Zephyrus",
+        "price": 1799.99,
+        "image": "./images/laptop.jpg"
+      },
+      {
+        "id": 46,
+        "title": "Acer Predator Helios 300",
+        "price": 1499.99,
+        "image": "./images/laptop.jpg"
+      },
+      {
+        "id": 47,
+        "title": "Lenovo Legion Y740",
+        "price": 1299.99,
+        "image": "./images/laptop.jpg"
+      },
+      {
+        "id": 48,
+        "title": "HP Omen 15",
+        "price": 1099.99,
+        "image": "./images/laptop.jpg"
+      },
+      {
+        "id": 49,
+        "title": "Dell Alienware M15",
+        "price": 1899.99,
+        "image": "./images/laptop.jpg"
+      },
+      {
+        "id": 50,
+        "title": "Razer Blade Stealth 13",
+        "price": 1599.99,
+        "image": "./images/laptop.jpg"
+      },
+      {
+        "id": 51,
+        "title": "Asus ZenBook Flip 14",
+        "price": 999.99,
+        "image": "./images/laptop.jpg"
+      },
+      {
+        "id": 52,
+        "title": "Microsoft Surface Go",
+        "price": 699.99,
+        "image": "./images/laptop.jpg"
+      },
+      {
+        "id": 53,
+        "title": "Acer Aspire 5",
+        "price": 599.99,
+        "image": "./images/laptop.jpg"
+      },
+      {
+        "id": 54,
+        "title": "Lenovo IdeaPad 330S",
+        "price": 799.99,
+        "image": "./images/laptop.jpg"
+      },
+      {
+        "id": 55,
+        "title": "HP Envy x360",
+        "price": 899.99,
+        "image": "./images/laptop.jpg"
+      },
+      {
+        "id": 56,
+        "title": "Dell Inspiron 13",
+        "price": 699.99,
+        "image": "./images/laptop.jpg"
+      },
+      {
+        "id": 57,
+        "title": "Asus Vivobook X512FA",
+        "price": 599.99,
+        "image": "./images/laptop.jpg"
+      },
+      {
+        "id": 58,
+        "title": "Acer Chromebook 715",
+        "price": 499.99,
+        "image": "./images/laptop.jpg"
+      },
+      {
+        "id": 59,
+        "title": "Lenovo ThinkPad E490",
+        "price": 899.99,
+        "image": "./images/laptop.jpg"
+      },
+      {
+        "id": 60,
+        "title": "HP ProBook 450 G7",
+        "price": 999.99,
+        "image": "./images/laptop.jpg"
+      }
+    ],
+    "accessories": [
+      {
+        "id": 61,
+        "title": "iPhone 14",
+        "price": 999.99,
+        "image": "./images/charger.jpg"
+      },
+      {
+        "id": 62,
+        "title": "Samsung Galaxy S21",
+        "price": 799.99,
+        "image": "./images/charger.jpg"
+      },
+      {
+        "id": 63,
+        "title": "Google Pixel 6",
+        "price": 599.99,
+        "image": "./images/charger.jpg"
+      },
+      {
+        "id": 64,
+        "title": "OnePlus 9",
+        "price": 729.99,
+        "image": "./images/charger.jpg"
+      },
+      {
+        "id": 65,
+        "title": "Xiaomi Mi 11",
+        "price": 749.99,
+        "image": "./images/charger.jpg"
+      },
+      {
+        "id": 66,
+        "title": "Sony Xperia 5 II",
+        "price": 899.99,
+        "image": "./images/charger.jpg"
+      },
+      {
+        "id": 67,
+        "title": "Nokia 8.3 5G",
+        "price": 699.99,
+        "image": "./images/charger.jpg"
+      },
+      {
+        "id": 68,
+        "title": "Motorola Edge 20",
+        "price": 599.99,
+        "image": "./images/charger.jpg"
+      },
+      {
+        "id": 69,
+        "title": "Huawei P40 Pro",
+        "price": 999.99,
+        "image": "./images/charger.jpg"
+      },
+      {
+        "id": 70,
+        "title": "Oppo Find X3 Pro",
+        "price": 1149.99,
+        "image": "./images/charger.jpg"
+      },
+      {
+        "id": 71,
+        "title": "Realme GT",
+        "price": 499.99,
+        "image": "./images/charger.jpg"
+      },
+      {
+        "id": 72,
+        "title": "Vivo X60 Pro",
+        "price": 799.99,
+        "image": "./images/charger.jpg"
+      },
+      {
+        "id": 73,
+        "title": "Asus ROG Phone 5",
+        "price": 999.99,
+        "image": "./images/charger.jpg"
+      },
+      {
+        "id": 74,
+        "title": "LG Velvet",
+        "price": 599.99,
+        "image": "./images/charger.jpg"
+      },
+      {
+        "id": 75,
+        "title": "ZTE Axon 20",
+        "price": 499.99,
+        "image": "./images/charger.jpg"
+      },
+      {
+        "id": 76,
+        "title": "Google Pixel 5a",
+        "price": 449.99,
+        "image": "./images/charger.jpg"
+      },
+      {
+        "id": 77,
+        "title": "Samsung Galaxy A52",
+        "price": 349.99,
+        "image": "./images/charger.jpg"
+      },
+      {
+        "id": 78,
+        "title": "Xiaomi Redmi Note 10",
+        "price": 199.99,
+        "image": "./images/charger.jpg"
+      },
+      {
+        "id": 79,
+        "title": "OnePlus Nord",
+        "price": 299.99,
+        "image": "./images/charger.jpg"
+      },
+      {
+        "id": 80,
+        "title": "Nokia G20",
+        "price": 199.99,
+        "image": "./images/charger.jpg"
+      },
+      {
+        "id": 81,
+        "title": "Motorola Moto G Power",
+        "price": 199.99,
+        "image": "./images/charger.jpg"
+      },
+      {
+        "id": 82,
+        "title": "Huawei P30 Pro",
+        "price": 699.99,
+        "image": "./images/charger.jpg"
+      },
+      {
+        "id": 83,
+        "title": "Oppo Reno Ace 2",
+        "price": 499.99,
+        "image": "./images/charger.jpg"
+      },
+      {
+        "id": 84,
+        "title": "Realme 6",
+        "price": 299.99,
+        "image": "./images/charger.jpg"
+      },
+      {
+        "id": 85,
+        "title": "Vivo Y20",
+        "price": 199.99,
+        "image": "./images/charger.jpg"
+      },
+      {
+        "id": 86,
+        "title": "Asus Zenfone 7 Pro",
+        "price": 699.99,
+        "image": "./images/charger.jpg"
+      },
+      {
+        "id": 87,
+        "title": "LG K52",
+        "price": 299.99,
+        "image": "./images/charger.jpg"
+      },
+      {
+        "id": 88,
+        "title": "ZTE Blade A7 Prime",
+        "price": 199.99,
+        "image": "./images/charger.jpg"
+      },
+      {
+        "id": 89,
+        "title": "Google Pixel 4a",
+        "price": 299.99,
+        "image": "./images/charger.jpg"
+      },
+      {
+        "id": 90,
+        "title": "Samsung Galaxy M12",
+        "price": 199.99,
+        "image": "./images/charger.jpg"
+      }
+    ]
+  }
+}
