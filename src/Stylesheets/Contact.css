@@ -1,0 +1,96 @@
+ .container.contact {
+  width: 96%;
+    margin-top: 220px;
+    text-align: center;
+    padding: 80px 30px; 
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    
+  }
+  
+  h1 {
+    font-size: 40px; 
+    color: #333; 
+    margin: 10px 20px 0 300px; 
+ }
+  
+  .contact-icon {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    gap: 40px; 
+    
+  }
+  
+  .items {
+    display: inline-block; 
+    transition: transform 0.3s; 
+  
+  }
+
+  .items:hover {
+    transform: scale(1.1); 
+  }
+  
+  .icons {
+    font-size: 50px; 
+    color: #555; 
+    transition: color 0.3s; 
+    margin-top: 10px;
+  }
+
+  .items:hover .icons {
+    color: #007bff; 
+  }
+  
+  .cart {
+    padding: 20px;
+    
+  }
+  
+  .cart-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  .quantity-controls {
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .quantity-controls button {
+    margin: 0 5px;
+    
+  }
+  
+  .checkout-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+
+    .container.contact{
+      width: 90%;
+    }
+    h1 {
+      font-size: 30px; 
+      margin: 10px 150px;
+    }
+
+    .contact-icon{
+      flex-direction: row;
+      align-items: center;
+      margin-left: 15px;
+     
+    }
+  
+    .icons {
+      font-size: 30px; 
+    }
+  } 
