@@ -73,17 +73,6 @@ const PaymentOptions = ({ cart, setCart }) => {
             UPI
           </label>
         </div>
-        <div>
-          <label>
-            <input
-              type="radio"
-              value="PAYPAL"
-              checked={selectedMethod === 'PAYPAL'}
-              onChange={handlePaymentMethodChange}
-            />
-            PayPal
-          </label>
-        </div>
       </form>
       <button onClick={handleProceed}>Proceed</button>
     </div>

@@ -2,27 +2,32 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "../index.css";
 
-const ProductList = ({ category="all", cart, setCart }) => {
+const ProductList = ({ category = "all", cart, setCart }) => {
   const [loading, setLoading] = useState(true);
   const [products, setProducts] = useState({
     mobiles: [],
     laptops: [],
     accessories: [],
   });
+  const [error, setError] = useState(null); // State for error handling
 
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch("/Data/product.json");
+        const response = await fetch(`/Data/product.json`);
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
         const data = await response.json();
         setProducts({
           mobiles: data.products.mobiles,
           laptops: data.products.laptops,
           accessories: data.products.accessories,
         });
-        setLoading(false);
       } catch (error) {
         console.log("Error Fetching Data:", error);
+        setError("Failed to load products. Please try again later.");
+      } finally {
         setLoading(false);
       }
     };
@@ -32,6 +37,10 @@ const ProductList = ({ category="all", cart, setCart }) => {
 
   if (loading) {
     return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div>{error}</div>; // Display error message
   }
 
   const handleAddToCart = (item) => {
@@ -44,7 +53,6 @@ const ProductList = ({ category="all", cart, setCart }) => {
       {category === "all" && (
         <>
           <h2>All Products</h2>
-
           {/* Mobiles Section */}
           <h3>Mobiles</h3>
           <div className="product-grid">
@@ -109,7 +117,7 @@ const ProductList = ({ category="all", cart, setCart }) => {
                 <Link to={`/product/${item.id}`}>
                   <img
                     src={item.image}
-                    alt={item.title}
+                    alt={item.title }
                     className="product-image"
                     loading="lazy"
                   />
@@ -146,7 +154,7 @@ const ProductList = ({ category="all", cart, setCart }) => {
                       className="product-image"
                     />
                     <h3 className="item-title">{item.title}</h3>
-                    <p className="item -price">Price: ${item.price}</p>
+                    <p className="item-price">Price: ${item.price}</p>
                   </Link>
                   <button
                     className="add-to-cart"
