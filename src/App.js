@@ -1,6 +1,5 @@
-// App.js
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import ProductList from "./Components/ProductList";
 import Contact from "./Components/Contact";
@@ -22,21 +21,28 @@ function App() {
   });
 
   const [marginTop] = useState("240px");
+
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch("/Data/product.json");
+        const response = await fetch("/Data/product.json"); // Adjust path if necessary
         if (!response.ok) {
-          throw new Error("Network response was not ok" + response.statusText);
+          throw new Error("Network response was not ok: " + response.statusText);
         }
         const data = await response.json();
         setProducts({
-          mobiles: data.products.mobiles,
-          laptops: data.products.laptops,
-          accessories: data.products.accessories,
+          mobiles: data.products.mobiles || [],
+          laptops: data.products.laptops || [],
+          accessories: data.products.accessories || [],
         });
       } catch (error) {
         console.error("Error fetching product data:", error);
+        // Optional: Set products to empty arrays or some default values
+        setProducts({
+          mobiles: [],
+          laptops: [],
+          accessories: [],
+        });
       }
     };
 
@@ -53,19 +59,17 @@ function App() {
   return (
     <Router>
       <Navbar cart={cart} totalItems={Object.keys(cart).reduce((acc, itemId) => acc + cart[itemId], 0)} />
-      <div style={{ marginTop }}> 
       <Routes>
-        < Route path="/" element={<ProductList category="all" cart={cart} setCart={setCart} products={allProducts}/>} />
-        <Route path="/mobiles" element={<ProductList category="mobiles" cart={cart} setCart={setCart} />} />
-        <Route path="/laptops" element={<ProductList category="laptops" cart={cart} setCart={setCart} />} />
-        <Route path="/accessories" element={<ProductList category="accessories" cart={cart} setCart={setCart} />} />
+        <Route path="/" element={<ProductList category="all" cart={cart} setCart={setCart} products={allProducts} />} />
+        <Route path="/mobiles" element={<ProductList category="mobiles" cart={cart} setCart={setCart} products={products.mobiles} />} />
+        <Route path="/laptops" element={<ProductList category="laptops" cart={cart} setCart={setCart} products={products.laptops} />} />
+        <Route path="/accessories" element={<ProductList category="accessories" cart={cart} setCart={setCart} products={products.accessories} />} />
         <Route path="/cart" element={<Cart cart={cart} products={allProducts} setCart={setCart} />} />
         <Route path="/address" element={<Address cart={cart} />} />
         <Route path="/checkout" element={<Checkout products={allProducts} cart={cart} setCart={setCart} />} />
-        { <Route path="/payment" element={<PaymentOptions cart={cart} setCart={setCart} />} /> }
+        <Route path="/payment" element={<PaymentOptions cart={cart} setCart={setCart} />} />
         <Route path="/contact-me" element={<Contact />} />
       </Routes>
-    </div>
     </Router>
   );
 }
