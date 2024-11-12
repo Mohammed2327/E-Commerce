@@ -106,9 +106,8 @@ h2 {
 }
 
 .product-list {
-  margin-top: 60px; 
   width: 100%; 
-  margin: -290px ;
+  margin: -80px -270px;
   padding: 0 350px;
   background-color: #fff;
   border: 1px solid #ddd;
@@ -171,7 +170,7 @@ h2 {
 }
 
 /* Mobile Screen */
-@media screen and (min-width: 400px) and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .container {
     flex-direction: column;
     width: 100%;

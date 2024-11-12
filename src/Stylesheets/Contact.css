@@ -10,8 +10,8 @@
   }
   
   h1 {
-    font-size: 40px; 
-    color: #333; 
+    font-size: 40px !important; 
+    color: #333 !important; 
     margin: 10px 20px 0 300px; 
  }
   

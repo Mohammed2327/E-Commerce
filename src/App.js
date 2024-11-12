@@ -20,7 +20,7 @@ function App() {
     accessories: [],
   });
 
-  const [marginTop] = useState("240px");
+  // const [marginTop] = useState("360px");
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -59,6 +59,7 @@ function App() {
   return (
     <Router>
       <Navbar cart={cart} totalItems={Object.keys(cart).reduce((acc, itemId) => acc + cart[itemId], 0)} />
+      {/* <div style={{ marginTop }}> */}
       <Routes>
         <Route path="/" element={<ProductList category="all" cart={cart} setCart={setCart} products={allProducts} />} />
         <Route path="/mobiles" element={<ProductList category="mobiles" cart={cart} setCart={setCart} products={products.mobiles} />} />
@@ -70,6 +71,7 @@ function App() {
         <Route path="/payment" element={<PaymentOptions cart={cart} setCart={setCart} />} />
         <Route path="/contact-me" element={<Contact />} />
       </Routes>
+      {/* </div> */}
     </Router>
   );
 }
