@@ -1,6 +1,4 @@
 # Getting Started with E-Commerce Website
-
-# Project Overview
 This E-Commerce website is designed to provide users with a seamless shopping experience. It features a user-friendly interface, product listings, shopping cart functionality, and secure payment options.
 
 This project was bootstrapped with [Create React App].
