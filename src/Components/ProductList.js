@@ -14,7 +14,7 @@ const ProductList = ({ category = "all", cart, setCart }) => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch('public/Data/product.json');
+        const response = await fetch('E-Commerce/Data/product.json');
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
