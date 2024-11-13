@@ -9,7 +9,7 @@ const ProductList = ({ category = "all", cart, setCart }) => {
     laptops: [],
     accessories: [],
   });
-  const [error, setError] = useState(null); // State for error handling
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -40,7 +40,7 @@ const ProductList = ({ category = "all", cart, setCart }) => {
   }
 
   if (error) {
-    return <div>{error}</div>; // Display error message
+    return <div>{error}</div>;
   }
 
   const handleAddToCart = (item) => {
@@ -53,7 +53,6 @@ const ProductList = ({ category = "all", cart, setCart }) => {
       {category === "all" && (
         <>
           <h2>All Products</h2>
-          {/* Mobiles Section */}
           <h3>Mobiles</h3>
           <div className="product-grid">
             {products.mobiles.map((item) => (
@@ -81,7 +80,6 @@ const ProductList = ({ category = "all", cart, setCart }) => {
             ))}
           </div>
 
-          {/* Laptops Section */}
           <h3>Laptops</h3>
           <div className="product-grid">
             {products.laptops.map((item) => (
@@ -109,7 +107,6 @@ const ProductList = ({ category = "all", cart, setCart }) => {
             ))}
           </div>
 
-          {/* Accessories Section */}
           <h3>Accessories</h3>
           <div className="product-grid">
             {products.accessories.map((item) => (
@@ -117,7 +114,7 @@ const ProductList = ({ category = "all", cart, setCart }) => {
                 <Link to={`/product/${item.id}`}>
                   <img
                     src={item.image}
-                    alt={item.title }
+                    alt={item.title}
                     className="product-image"
                     loading="lazy"
                   />
@@ -139,7 +136,6 @@ const ProductList = ({ category = "all", cart, setCart }) => {
         </>
       )}
 
-      {/* Category-specific product list */}
       {category !== "all" && (
         <>
           <h2>{category.charAt(0).toUpperCase() + category.slice(1)}</h2>
@@ -150,7 +146,7 @@ const ProductList = ({ category = "all", cart, setCart }) => {
                   <Link to={`/product/${item.id}`}>
                     <img
                       src={item.image}
-                      alt={item.title}
+                      alt={item.title }
                       className="product-image"
                     />
                     <h3 className="item-title">{item.title}</h3>

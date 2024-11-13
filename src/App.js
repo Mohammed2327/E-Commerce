@@ -4,7 +4,7 @@ import Navbar from "./Components/Navbar";
 import ProductList from "./Components/ProductList";
 import Contact from "./Components/Contact";
 import Cart from "./Components/Cart";
-import PaymentOptions from "./Components/PaymentOptions"; // Import PaymentOptions
+import PaymentOptions from "./Components/PaymentOptions";
 import Address from "./Components/Address";
 import Checkout from "./Components/Checkout";
 
@@ -20,12 +20,10 @@ function App() {
     accessories: [],
   });
 
-  // const [marginTop] = useState("360px");
-
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch("/Data/product.json"); // Adjust path if necessary
+        const response = await fetch("/Data/product.json"); 
         if (!response.ok) {
           throw new Error("Network response was not ok: " + response.statusText);
         }
@@ -37,7 +35,6 @@ function App() {
         });
       } catch (error) {
         console.error("Error fetching product data:", error);
-        // Optional: Set products to empty arrays or some default values
         setProducts({
           mobiles: [],
           laptops: [],
@@ -53,7 +50,6 @@ function App() {
     localStorage.setItem("cart", JSON.stringify(cart));
   }, [cart]);
 
-  // Flatten the products for easier access
   const allProducts = [...products.mobiles, ...products.laptops, ...products.accessories];
 
   return (
