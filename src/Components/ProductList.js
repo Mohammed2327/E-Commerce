@@ -14,15 +14,15 @@ const ProductList = ({ category = "all", cart, setCart }) => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch("/Data/product.json");
+        const response = await fetch(`${process.env.PUBLIC_URL}/Data/product.json`);
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
         const data = await response.json();
         setProducts({
-          mobiles: data.products.mobiles,
-          laptops: data.products.laptops,
-          accessories: data.products.accessories,
+          mobiles: data.products.mobiles || [],
+          laptops: data.products.laptops || [],
+          accessories: data.products.accessories || [],
         });
       } catch (error) {
         console.log("Error Fetching Data:", error);
@@ -59,7 +59,7 @@ const ProductList = ({ category = "all", cart, setCart }) => {
               <div key={item.id} className="product-card">
                 <Link to={`/product/${item.id}`}>
                   <img
-                    src={item.image}
+                    src={`${process.env.PUBLIC_URL}/${item.image}`}
                     alt={item.title}
                     className="product-image"
                     loading="lazy"
@@ -86,7 +86,7 @@ const ProductList = ({ category = "all", cart, setCart }) => {
               <div key={item.id} className="product-card">
                 <Link to={`/product/${item.id}`}>
                   <img
-                    src={item.image}
+                    src={`${process.env.PUBLIC_URL}/${item.image}`}
                     alt={item.title}
                     className="product-image"
                     loading="lazy"
@@ -113,7 +113,7 @@ const ProductList = ({ category = "all", cart, setCart }) => {
               <div key={item.id} className="product-card">
                 <Link to={`/product/${item.id}`}>
                   <img
-                    src={item.image}
+                    src={`${process.env.PUBLIC_URL}/${item.image}`}
                     alt={item.title}
                     className="product-image"
                     loading="lazy"
@@ -145,7 +145,7 @@ const ProductList = ({ category = "all", cart, setCart }) => {
                 <div key={item.id} className="product-card">
                   <Link to={`/product/${item.id}`}>
                     <img
-                      src={item.image}
+                     src={`${process.env.PUBLIC_URL}/${item.image}`}
                       alt={item.title }
                       className="product-image"
                     />
