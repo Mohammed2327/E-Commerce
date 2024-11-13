@@ -23,7 +23,7 @@ function App() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch("public/Data/product.json"); 
+        const response = await fetch(`public/Data/product.json`); 
         if (!response.ok) {
           throw new Error("Network response was not ok: " + response.statusText);
         }
