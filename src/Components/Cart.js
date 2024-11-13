@@ -57,7 +57,11 @@ const Cart = ({ cart, products, setCart }) => {
               <div key={itemId} className="cart-item">
                 <div className="cart-item-details">
                   <img 
+<<<<<<< HEAD
                      src={`${process.env.PUBLIC_URL}/${product.image || 'images/default.jpg'}`} 
+=======
+                    src={`${process.env.PUBLIC_URL}/${product.image || 'images/default.jpg'}`} 
+>>>>>>> 3b717924a074930e36fd0c2532b38e493b4b5653
                     alt={product.title || 'Product Image Not Available'} 
                     className="product-image" 
                   />
