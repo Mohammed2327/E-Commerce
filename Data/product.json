@@ -5,181 +5,181 @@
         "id": 1,
         "title": "iPhone 14",
         "price": 999.99,
-        "image": "/images/iphone.png"
+        "image": "/images/Phone/phone1.jpg"
       },
       {
         "id": 2,
         "title": "Samsung Galaxy S21",
         "price": 799.99,
-        "image": "/images/iphone.png"
+        "image": "/images/Phone/phone2.jpg"
       },
       {
         "id": 3,
         "title": "Google Pixel 6",
         "price": 599.99,
-        "image": "/images/iphone.png"
+        "image": "/images/Phone/phone3.jpg"
       },
       {
         "id": 4,
         "title": "OnePlus 9",
         "price": 729.99,
-        "image": "/images/iphone.png"
+        "image": "/images/Phone/phone4.jpg"
       },
       {
         "id": 5,
         "title": "Xiaomi Mi 11",
         "price": 749.99,
-        "image": "/images/iphone.png"
+        "image": "/images/Phone/phone5.jpg"
       },
       {
         "id": 6,
         "title": "Sony Xperia 5 II",
         "price": 899.99,
-        "image": "/images/iphone.png"
+        "image": "/images/Phone/phone6.jpg"
       },
       {
         "id": 7,
         "title": "Nokia 8.3 5G",
         "price": 699.99,
-        "image": "/images/iphone.png"
+        "image": "/images/Phone/phone7.jpg"
       },
       {
         "id": 8,
         "title": "Motorola Edge 20",
         "price": 599.99,
-        "image": "/images/iphone.png"
+        "image": "/images/Phone/phone8.jpg"
       },
       {
         "id": 9,
         "title": "Huawei P40 Pro",
         "price": 999.99,
-        "image": "/images/iphone.png"
+        "image": "/images/Phone/phone9.jpg"
       },
       {
         "id": 10,
         "title": "Oppo Find X3 Pro",
         "price": 1149.99,
-        "image": "/images/iphone.png"
+        "image": "/images/Phone/phone11.jpg"
       },
       {
         "id": 11,
         "title": "Realme GT",
         "price": 499.99,
-        "image": "/images/iphone.png"
+        "image": "/images/Phone/phone11.jpg"
       },
       {
         "id": 12,
         "title": "Vivo X60 Pro",
         "price": 799.99,
-        "image": "/images/iphone.png"
+        "image": "/images/Phone/phone12.jpg"
       },
       {
         "id": 13,
         "title": "Asus ROG Phone 5",
         "price": 999.99,
-        "image": "/images/iphone.png"
+        "image": "/images/Phone/phone13.jpg"
       },
       {
         "id": 14,
         "title": "LG Velvet",
         "price": 599.99,
-        "image": "/images/iphone.png"
+        "image": "/images/Phone/phone14.jpg"
       },
       {
         "id": 15,
         "title": "ZTE Axon 20",
         "price": 499.99,
-        "image": "/images/iphone.png"
+        "image": "/images/Phone/phone5.jpg"
       },
       {
         "id": 16,
         "title": "Google Pixel 5a",
         "price": 449.99,
-        "image": "/images/iphone.png"
+        "image": "/images/Phone/phone5.jpg"
       },
       {
         "id": 17,
         "title": "Samsung Galaxy A52",
         "price": 349.99,
-        "image": "/images/iphone.png"
+        "image": "/images/Phone/phone5.jpg"
       },
       {
         "id": 18,
         "title": "Xiaomi Redmi Note 10",
         "price": 199.99,
-        "image": "/images/iphone.png"
+        "image": "/images/Phone/phone5.jpg"
       },
       {
         "id": 19,
         "title": "OnePlus Nord",
         "price": 299.99,
-        "image": "/images/iphone.png"
+        "image": "/images/Phone/phone5.jpg"
       },
       {
         "id": 20,
         "title": "Nokia G20",
         "price": 199.99,
-        "image": "/images/iphone.png"
+        "image": "/images/Phone/phone5.jpg"
       },
       {
         "id": 21,
         "title": "Motorola Moto G Power",
         "price": 199.99,
-        "image": "/images/iphone.png"
+        "image": "/images/Phone/phone5.jpg"
       },
       {
         "id": 22,
         "title": "Huawei P30 Pro",
         "price": 699.99,
-        "image": "/images/iphone.png"
+        "image": "/images/Phone/phone5.jpg"
       },
       {
         "id": 23,
         "title": "Oppo Reno Ace 2",
         "price": 499.99,
-        "image": "/images/iphone.png"
+        "image": "/images/Phone/phone5.jpg"
       },
       {
         "id": 24,
         "title": "Realme 6",
         "price": 299.99,
-        "image": "/images/iphone.png"
+        "image": "/images/Phone/phone5.jpg"
       },
       {
         "id": 25,
         "title": "Vivo Y20",
         "price": 199.99,
-        "image": "/images/iphone.png"
+        "image": "/images/Phone/phone5.jpg"
       },
       {
         "id": 26,
         "title": "Asus Zenfone 7 Pro",
         "price": 699.99,
-        "image": "/images/iphone.png"
+        "image": "/images/Phone/phone5.jpg"
       },
       {
         "id": 27,
         "title": "LG K52",
         "price": 299.99,
-        "image": "/images/iphone.png"
+        "image": "/images/Phone/phone5.jpg"
       },
       {
         "id": 28,
         "title": "ZTE Blade A7 Prime",
         "price": 199.99,
-        "image": "/images/iphone.png"
+        "image": "/images/Phone/phone5.jpg"
       },
       {
         "id": 29,
         "title": "Google Pixel 4a",
         "price": 299.99,
-        "image": "/images/iphone.png"
+        "image": "/images/Phone/phone5.jpg"
       },
       {
         "id": 30,
         "title": "Samsung Galaxy M12",
         "price": 199.99,
-        "image": "/images/iphone.png"
+        "image": "/images/Phone/phone5.jpg"
       }
     ],
     "laptops": [
