@@ -52,12 +52,12 @@ const Cart = ({ cart, products, setCart }) => {
       {Object.keys(cart).length > 0 ? (
         <div>
           {Object.keys(cart).map((itemId) => {
-            const product = getProductDetails(itemId);
+            const product = getProductDetails(itemId);  
             return (
               <div key={itemId} className="cart-item">
                 <div className="cart-item-details">
                   <img 
-                    src={product.image || '/images/default.jpg'} 
+                     src={`${process.env.PUBLIC_URL}/${product.image || 'images/default.jpg'}`} 
                     alt={product.title || 'Product Image Not Available'} 
                     className="product-image" 
                   />
