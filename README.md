@@ -31,5 +31,5 @@ You may also see any lint errors in the console.
 ![image](https://github.com/user-attachments/assets/9c900f63-c3ea-4fd1-866d-4b4c80831418)
 
 
-## Thanks for visiting
-## Mohammed Mujeebuddin
+# Thanks for visiting,
+# Mohammed Mujeebuddin
