@@ -29,7 +29,6 @@ const Address = ({ cart, products }) => {
 
         const { name, street, city, state, zip, phone } = shippingAddress;
 
-        // Validation
         const nameRegex = /^[a-zA-Z\s]+$/;
         const addressRegex = /^[a-zA-Z0-9\s]+$/;
         const cityStateRegex = /^[a-zA-Z\s]+$/;
@@ -61,7 +60,6 @@ const Address = ({ cart, products }) => {
             return;
         }
 
-        // If all validations pass, navigate to checkout page
         navigate('/checkout', { state: { cart, shippingAddress, products } });
     };
 

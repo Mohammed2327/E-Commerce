@@ -1,4 +1,3 @@
-// PaymentOptions.js
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../Stylesheets/PaymentOptions.css';
@@ -14,11 +13,8 @@ const PaymentOptions = ({ cart, setCart }) => {
   const handleProceed = () => {
     if (selectedMethod) {
       console.log(`Selected payment method: ${selectedMethod}`);
-      // Display success message
       alert('Order placed successfully!');
-      // Reset the cart
       setCart({});
-      // Navigate to home or any other page if needed
       navigate('/'); 
     } else {
       alert('Please select a payment method.');

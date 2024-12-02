@@ -82,9 +82,12 @@ button:disabled {
   cursor: not-allowed;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .checkout {
-      padding: 15px;
+      padding: 20px;
+      width: 75%;
+      min-width: 400px;
+      margin-right: 20px;
   }
 
   h1 {

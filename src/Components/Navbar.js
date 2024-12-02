@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { IoMenu } from "react-icons/io5";
 import { MdClose } from "react-icons/md";
 import { FaCartShopping } from "react-icons/fa6";
-import { Link } from "react-router-dom"; // Import Link for navigation
+import { Link } from "react-router-dom"; 
 import "../index.css";
 
 const Navbar = ({ cart, totalItems }) => {
@@ -26,7 +26,6 @@ const Navbar = ({ cart, totalItems }) => {
         </div>
       )}
 
-      {/* Navigation Items */}
       <div className={`nav-items ${isMenuOpen ? "visible" : "hidden"}`}>
         <Link to="/" onClick={toggleMenu}>
           Home
@@ -57,7 +56,6 @@ const Navbar = ({ cart, totalItems }) => {
         </Link>
       </div>
 
-      {/* Cart Icon wrapped in Link */}
       <div className="cart-icon">
         <Link to="/cart">
           <FaCartShopping size={24}  aria-label="Shopping Cart" />

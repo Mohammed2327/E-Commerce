@@ -5,13 +5,11 @@ import '../Stylesheets/Cart.css';
 
 const Cart = ({ cart, products, setCart }) => {
   const navigate = useNavigate();
-
-  // Function to increment item quantity
+  
   const handleIncrement = (itemId) => {
     setCart({ ...cart, [itemId]: (cart[itemId] || 0) + 1 });
   };
 
-  // Function to decrement item quantity
   const handleDecrement = (itemId) => {
     const currentQuantity = cart[itemId];
     if (currentQuantity > 1) {
@@ -21,24 +19,23 @@ const Cart = ({ cart, products, setCart }) => {
     }
   };
 
-  // Function to remove an item from the cart
   const handleRemove = (itemId) => {
     const newCart = { ...cart };
     delete newCart[itemId];
     setCart(newCart);
   };
 
-  // Function to handle checkout
+ 
   const handleCheckout = () => {
     navigate("/address", { state: { cart } });
   };
 
-  // Function to get product details by item ID
+  
   const getProductDetails = (itemId) => {
     return products.find(product => product.id === Number(itemId)) || {};
   };
 
-  // Function to calculate total price of items in the cart
+  
   const calculateTotalPrice = () => {
     return Object.keys(cart).reduce((total, itemId) => {
       const product = getProductDetails(itemId);

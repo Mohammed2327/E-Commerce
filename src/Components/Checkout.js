@@ -5,20 +5,19 @@ import '../Stylesheets/Checkout.css';
 const Checkout = ({ products }) => {
   const navigate = useNavigate();
   const location = useLocation();
-  const { cart } = location.state || { cart: {} }; // Ensure cart is received
+  const { cart } = location.state || { cart: {} }; 
 
   const shippingCost = 5;
 
-  // Calculate total amount from the cart
   const totalAmount = Object.keys(cart).reduce((total, itemId) => {
-    const product = products.find((p) => p.id === Number(itemId)); // Compare as numbers
+    const product = products.find((p) => p.id === Number(itemId)); 
     return total + (product ? product.price * cart[itemId] : 0);
   }, 0);
 
-  const grandTotal = totalAmount + shippingCost; // Calculate grand total
+  const grandTotal = totalAmount + shippingCost; 
 
   const handleProceedToPayment = () => {
-    navigate('/payment', { state: { cart } }); // Pass cart to payment
+    navigate('/payment', { state: { cart } }); 
   };
 
   return (

@@ -1,9 +1,7 @@
 body {
-  
   margin: 0;
   background-color: #545454;
 }
-
 
 .container {
   font-family: "Roboto", "sans-serif", "italic";
@@ -12,7 +10,7 @@ body {
   align-items: flex-start;
   justify-content: flex-start;
   position: fixed;
-  top: 0px;
+  top: 0;
   left: 0;
   padding: 25px;
   gap: 25px;
@@ -78,11 +76,11 @@ body {
   margin-top: 10px;
 }
 
-.cart-icon svg{
+.cart-icon svg {
   color: white;
 }
 
-.cart-icon a{
+.cart-icon a {
   text-decoration: none;
 }
 
@@ -91,24 +89,23 @@ body {
   display: none;
 }
 
-/* Product List CSS  */
-h1 {
-  margin: 20px;
+ /* Product List */
+h3 {
+  font-size: 25px;
   padding: 0;
-  text-align: center;
 }
 
 h2 {
   margin: 50px;
   padding: 0;
   font-size: 35px;
-  text-align-last: left;
+  
+  text-align: center;
 }
 
 .product-list {
   width: 100%; 
-  margin: -80px -270px;
-  padding: 0 350px;
+  margin-top: -80px;
   background-color: #fff;
   border: 1px solid #ddd;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -118,7 +115,7 @@ h2 {
   display: flex;
   flex-wrap: wrap; 
   justify-content: flex-start; 
-  padding: 10px;
+  padding: 10px 0 0 80px;
   margin: 20px;
 }
 
@@ -128,7 +125,7 @@ h2 {
   background-color: #fff;
   border: 1px solid #ddd;
   padding: 20px;
-  flex: 0 1 calc(33.33% - 20px);
+  flex: 0 1 calc(20% - 20px);
   margin: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -169,18 +166,17 @@ h2 {
   color: #ffffff;
 }
 
-/* Mobile Screen */
 @media screen and (max-width: 600px) {
   .container {
     flex-direction: column;
     width: 100%;
-    gap: 20px;
+    gap: 10px;
     font-size: 20px;
     transition: background-color 0.3s ease;
     background-color: transparent; 
   }
 
-  .cart-icon svg, .cart-count{
+  .cart-icon svg, .cart-count {
     color: black;
   }
 
@@ -198,7 +194,7 @@ h2 {
     color: white;
   }
 
- .close-icon {
+  .close-icon {
     margin-bottom: 10px;
     color: white;
   }
@@ -206,29 +202,22 @@ h2 {
   .cart-icon {
     margin-top: 10px;
   }
-}
 
-/* Product List CSS  */
-.product-card {
-  flex: 0 1 calc(20% - 20px);
-  margin: 5px;
-}
+  .product-grid {
+    padding: 10px; 
+    margin: 5px; 
+  }
 
-.product-image {
-  width: 100%; 
-  height: auto; 
-  border-radius: 10px;
-  margin-bottom: 10px; 
-}
+  .product-card {
+    flex: 0 1 calc(20% - 20px); 
+    margin: 10px; 
+  }
 
-.add-to-cart {
-  width: 100%;
-  padding: 12px;
-  font-style: 18px;
-  margin-top: auto;
-  border-radius: 10px;
-}
+  .product-image {
+    width: 100%; 
+  }
 
-.product-grid {
-  justify-content: flex-start;
+  .add-to-cart {
+    width: 100%; 
+  }
 }
