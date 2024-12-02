@@ -1,3 +1,4 @@
+
 # Getting Started with E-Commerce Website
 This E-Commerce website is designed to provide users with a seamless shopping experience. It features a user-friendly interface, product listings, shopping cart functionality, and secure payment options.
 
@@ -20,8 +21,15 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+## Homepage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![image](https://github.com/user-attachments/assets/8d559787-ad1e-44cd-ad83-5aeb5bdcbabf)
+
+## Cart
+
+![image](https://github.com/user-attachments/assets/9c900f63-c3ea-4fd1-866d-4b4c80831418)
+
+
+# Thanks for visiting,
+# Mohammed Mujeebuddin
